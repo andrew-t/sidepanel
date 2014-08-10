@@ -1,3 +1,5 @@
+var settings = settings || {};
+
 document.addEventListener('DOMContentLoaded', function() {
 	function forEachChild(parent, callback) {
 		var children = parent.children;
@@ -14,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		var handler = function() {
 			if (child.tagName === 'INPUT') {
 				if (child.value && /^[0-9]*(\.[0-9]+)?$/.test(child.value))
-					eval(child.id +  ' = parseFloat(child.value || "0");');
+					settings[child.id] = parseFloat(child.value || "0");
 				else
-					child.value = eval(child.id);
+					child.value = settings[child.id];
 			}
 		};
 		child.addEventListener('change', handler);
