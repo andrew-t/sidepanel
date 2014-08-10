@@ -1,7 +1,6 @@
 body {
 	margin: 0px; padding: 0px;
 	overflow: hidden;
-    font-family: sans-serif;
 }
 
 #body {
@@ -30,6 +29,7 @@ body {
 	padding: 0;
 	cursor: default;
     z-index: 0;
+    font-family: sans-serif;
 }
 #tabs {
 	background: #888;
@@ -84,7 +84,7 @@ body {
 	opacity: 0;
 }
 
-.hidden {
+#controls .hidden {
 	display: none;
 }
 
@@ -93,25 +93,25 @@ body {
 	font-size: 18px;
 }
 
-input {
+#controls input {
 	width: 60px;
 	border: 1px black solid;
 }
-label {
+#controls label {
 	min-width: 170px;
 	display: inline-block;
 }
 
-::-webkit-scrollbar {
+#controls ::-webkit-scrollbar {
     width: 6px;
 }
  
-::-webkit-scrollbar-track {
+#controls ::-webkit-scrollbar-track {
     border-radius: 3px;
     background-color: transparent;
 }
  
-::-webkit-scrollbar-thumb {
+#controls ::-webkit-scrollbar-thumb {
     border-radius: 3px;
     background-color: #000;
 }
