@@ -83,6 +83,9 @@ body {
 .menu #menu {
 	opacity: 0;
 }
+#menu::before {
+	content: '\u22ee';
+}
 
 #controls .hidden {
 	display: none;
