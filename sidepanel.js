@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 	document.getElementById('body').addEventListener('click', function(e) {
-		if (document.body.classList.contains('menu')) {
+		if (document.body.classList.contains('menu') && !e.menuClick) {
 			document.body.classList.remove('menu');
 			e.preventDefault();
 		}
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	document.getElementById('menu').addEventListener('click', function(e) {
 		e.preventDefault();
+		e.menuClick = true;
 		document.body.classList.toggle('menu');
 	});
 
