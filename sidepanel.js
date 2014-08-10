@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
 			callback(children[i]);
 	}
 
+	document.getElementById('body').addEventListener('click', function(e) {
+		if (document.body.classList.contains('menu')) {
+			document.body.classList.remove('menu');
+			e.preventDefault();
+		}
+	});
+
 	document.getElementById('menu').addEventListener('click', function(e) {
 		e.preventDefault();
 		document.body.classList.toggle('menu');
