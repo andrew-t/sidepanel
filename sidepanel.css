@@ -12,7 +12,7 @@ body {
     transition: left 0.5s;
     box-shadow: -20px 0 5px 20px black;
     z-index: 2;
-    background: black;
+    background: white;
 }
 .menu #body {
 	left: -300px;
@@ -84,7 +84,7 @@ body {
 	opacity: 0;
 }
 #menu::before {
-	content: '\u22ee';
+	content: '\22ee';
 }
 
 #controls .hidden {
