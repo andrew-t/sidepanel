@@ -29,7 +29,7 @@ body {
 	padding: 0;
 	cursor: default;
     z-index: 0;
-    font-family: sans-serif;
+    font-family: 'Calibri', sans-serif;
 }
 #tabs {
 	background: #888;
@@ -68,6 +68,7 @@ body {
 	font-size: 25px;
 	text-align: center;
 	height: 35px;
+	line-height: 35px;
 	width: 35px;
     top: 20px;
     right: 20px;
@@ -75,6 +76,7 @@ body {
     opacity: 1;
     transition: opacity 0.5s;
     box-shadow: 0 1px 2px black;
+	cursor: pointer;
 }
 #menu:hover {
 	background: white;
@@ -97,8 +99,9 @@ body {
 }
 
 #controls input {
-	width: 60px;
+	width: 100px;
 	border: 1px black solid;
+	font-size: 15px;
 }
 #controls label {
 	min-width: 170px;
@@ -125,15 +128,31 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	padding: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
 	overflow: auto;
 	margin: 0;
 }
-#controls > *:not(#tabs) > a {
+#controls form a {
 	display: inline-block;
 	cursor: pointer;
 	padding: 5px;
 	background: white;
 	color: black;
 	margin: 5px;
+}
+#controls form a:hover {
+	padding: 4px;
+	border: 1px solid white;
+	background: black;
+	color: white;
+	margin: 5px;
+}
+#controls p a {
+	color: #ccf;
+	text-decoration: none;
+	font-weight: bold;
+}
+#controls p a:hover {
+	color: #fff;
+	text-decoration: underline;
 }
